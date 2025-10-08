@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="home-hero">
+    <h1>Welcome to My Portfolio!</h1>
+    <p>Good day! This is my portfolio with some of my works!</p>
+
+    <div class="home-buttons">
+        <a href="{{ url_for('profile') }}" class="btn">Profile</a>
+        <a href="{{ url_for('touppercase') }}" class="btn">Uppercase Converter</a>
+        <a href="{{ url_for('circle') }}" class="btn">Area of Circle</a>
+        <a href="{{ url_for('triangle') }}" class="btn">Area of Triangle</a>
+        <a href="{{ url_for('contact') }}" class="btn">Contact</a>
+    </div>
+</div>
+{% endblock %}

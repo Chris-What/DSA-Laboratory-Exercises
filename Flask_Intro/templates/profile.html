@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page profile-page">
+    <div class="profile-card">
+        <img src="{{ url_for('static', filename='images/myimage.jpg') }}" alt="My Photo" class="profile-photo">
+        <div class="profile-info">
+            <h1>About Me</h1>
+            <p>Hello! My name is Chriswell Mangahas, and I am a BSCpE student at PUP.  
+               I live in Quezon City, with a dream to be a good software developer and to be better at school, work, and life!</p>
+            <p><strong>Interests:</strong> Music, Art, Walking, Coding, Exploring, Living Life</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

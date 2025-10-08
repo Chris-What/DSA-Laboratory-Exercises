@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page circle-page">
+    <h1>Circle Area Calculator</h1>
+    <p>Enter a radius of a circle, and the program will calculate its area.</p>
+    <form method="POST">
+        <input type="number" step="any" name="radius" placeholder="Enter radius">
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if area %}
+    <p><strong>Area:</strong> {{ area }}</p>
+    {% endif %}
+</div>
+{% endblock %}

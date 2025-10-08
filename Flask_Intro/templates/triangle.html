@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page triangle-page">
+    <h1>Triangle Area Calculator</h1>
+    <p>Enter a base and height of a triangle, and the program will calculate its area.</p>
+    <form method="POST">
+        <input type="number" step="any" name="base" placeholder="Enter base">
+        <input type="number" step="any" name="height" placeholder="Enter height">
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if area %}
+    <p><strong>Area:</strong> {{ area }}</p>
+    {% endif %}
+</div>
+{% endblock %}

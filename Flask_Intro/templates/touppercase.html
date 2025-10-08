@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page works-page">
+    <h1>String Uppercase Tool</h1>
+    <p>Enter a string of text, and the program will convert it to uppercase.</p>
+    <form method="POST">
+        <input type="text" name="inputString" placeholder="Enter text here">
+        <button type="submit">Convert</button>
+    </form>
+
+    {% if result %}
+    <p><strong>Result:</strong> {{ result }}</p>
+    {% endif %}
+</div>
+{% endblock %}
